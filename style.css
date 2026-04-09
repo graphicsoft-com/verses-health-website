@@ -290,28 +290,43 @@ p {
     overflow: hidden;
 }
 
-.mockup-header {
-    background: rgba(0,0,0,0.05);
-    padding: 1rem;
-    display: flex;
-    gap: 0.5rem;
-    border-bottom: var(--glass-border);
-}
-
-.dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-}
-.dot.red { background: #ff5f56; }
-.dot.yellow { background: #ffbd2e; }
-.dot.green { background: #27c93f; }
-
-.mockup-body {
-    padding: 2rem;
+.mockup-card {
+    width: 320px;
+    aspect-ratio: 390 / 844;
+    border-radius: 40px;
+    border: 6px solid #1a1a1a;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), inset 0 0 0 1px #333;
+    position: relative;
+    background: #ffffff;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+}
+
+.mockup-header {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.dynamic-island {
+    width: 100px;
+    height: 28px;
+    background: #1a1a1a;
+    border-radius: 14px;
+}
+
+.mockup-body {
+    padding: 3.5rem 1.25rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    flex: 1;
+    overflow: hidden;
 }
 
 /* Waveform Animation */
@@ -380,6 +395,9 @@ p {
     border: var(--glass-border);
     padding: 1.5rem;
     border-radius: 12px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .skeleton-line {
@@ -391,10 +409,12 @@ p {
 
 .skeleton-line.full { width: 100%; }
 .skeleton-line.eighty { width: 80%; }
+.skeleton-line.short { width: 30%; }
 .skeleton-line.half { width: 50%; margin-bottom: 20px;}
 
 .sync-btn {
     width: 100%;
+    margin-top: auto;
 }
 
 /* Features Section */
