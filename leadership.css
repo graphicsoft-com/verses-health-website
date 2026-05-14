@@ -325,13 +325,13 @@
     }
 
     .leadership-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem 1.25rem;
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
     }
 
     .leader-image-wrap {
-        width: 140px;
-        height: 140px;
+        width: 160px;
+        height: 160px;
     }
 
     .leader-avatar span {
@@ -352,17 +352,13 @@
 }
 
 @media (max-width: 400px) {
-    .leadership-grid {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
-    }
-
     .leader-image-wrap {
-        width: 180px;
-        height: 180px;
+        width: 150px;
+        height: 150px;
     }
 
     .leader-avatar span {
-        font-size: 2.75rem;
+        font-size: 2.25rem;
     }
 }
+
