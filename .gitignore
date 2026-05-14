@@ -8,3 +8,5 @@ temp_interactive_push.bat
 
 /public
 /public/*.woff2
+branch_structure.json
+.gitignore
